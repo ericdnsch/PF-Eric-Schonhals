@@ -1,4 +1,14 @@
-//imports
+*{
+    box-sizing: border-box;
+    --white: #fff;
+    --maincolor: #434b56;
+    
+
+    
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import "_vars";
 @import "_mixins";
@@ -6,5 +16,8 @@
 @import "_index";
 @import "_3dmodels";
 @import "_products";
+@import "_aboutus";
+@import "_contact";
+@import "_404";
 @import "_footer";
 @import "_media";

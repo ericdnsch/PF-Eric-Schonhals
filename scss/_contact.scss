@@ -1,0 +1,97 @@
+.contact-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: $mainColor;
+    
+}
+
+.secondary-title{
+
+    font-size: 2rem;
+    color: $mainColor;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    border-radius: 0 10px 0 10px;
+    margin: 16px 0;
+    border: 0;
+    background: $secondaryColor;
+    padding: 20px 40px;
+    outline: none;
+    transition: 0.5s;
+    &:focus{
+        box-shadow: 5px 5px 1px 0px $mainColor;
+    }
+  }
+  
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    
+    border: 0;
+    background: $mainColor;
+    color: $baseColor;
+    padding: 12px 50px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        background: $hoverColorlight;
+    }
+  }
+
+  .icon{
+    width: 40px;
+    fill: $mainColor;
+    
+  }
+
+
+  
+
+  @media screen and (max-width: 495px){
+
+    .contact-title{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $mainColor;
+        
+    }
+    .secondary-title{
+
+        font-size: $textXl;
+        color: $mainColor;
+        text-align: center;
+    }
+    main{
+        div{
+            p.p-2{
+                text-align:center;
+            }
+        }
+    }
+    #contact-buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-form-btn{
+        padding: 10px 35px;
+        margin: auto;
+    }
+    #contenedor-icons{
+        display: inline;
+    }
+  }
+ 

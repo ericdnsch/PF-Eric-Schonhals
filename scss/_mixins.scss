@@ -5,6 +5,9 @@
     box-shadow: $sombra;
     text-align: $align;
     background-color: $color;
+    &:hover {
+        transform:scale(102%);
+    }
 }
 
 @mixin indexcards ($width,$bordes,$radio,$sombra){
@@ -12,5 +15,8 @@
     border: $bordes;
     border-radius: $radio;
     box-shadow: $sombra;
+    &:hover {
+        transform:scale(102%);
+    }
 }
 

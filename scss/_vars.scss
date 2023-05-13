@@ -26,6 +26,10 @@ $fontLight:300;
 $fontRegular:400;
 $fontBold:500;
 
+//navbar
+
+$navbar-toggler-focus-width: 0px;
+
 //extends
 
 .diplayflex {
@@ -55,4 +59,14 @@ $fontBold:500;
 .secondary-color{
 
     color: $secondaryColor;
+}
+
+.bg-color1{
+
+    background-color: red;
+    
+}
+.bg-color2{
+
+    background-color: blue;
 }

@@ -1,3 +1,45 @@
+button.navbar-toggler{
+
+    
+    background-color: $figureColor;
+    &:hover{
+        box-shadow: 5px 5px 1px 0px $mainColor;
+    }
+
+  }
+
+//animacion nav
+
+nav{
+    div{
+        div{
+            a{
+                color: $mainColor;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                 &:hover{
+                    color: $mainColor;
+                     background-size: 100% 2px;
+                }
+            }
+        }
+    }
+}
+
+
+.nav-links{
+
+
+    text-decoration: none;
+    font-size: $textMd;
+    font-weight: $fontRegular;
+    margin: auto;
+    
+}
+
 .navtext {
 
     color: $mainColor;
@@ -9,10 +51,24 @@
 
     width: 500px;
 }
+.w-300px{
 
+    width: 300px;
+}
 .w-100 {
 
     width: 100%;
+}
+.textos_about_us {
+
+    font-weight: $fontRegular;
+    font-size: $textLg;
+}
+
+.min-maxcontainer2 {
+
+    min-width: 300px;
+    max-width: 600px;
 }
 
 .position-relative {
@@ -60,7 +116,6 @@ figcaption {
         margin: 20px;
 }
 
-//seccion de about us
 .bg-color-logo {
 
     background-color:$mainColor;

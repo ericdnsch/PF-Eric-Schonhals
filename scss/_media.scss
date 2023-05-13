@@ -158,6 +158,8 @@
 
         display: none;
     }
+
+
 }
 //breakpoint 430
 @media (width < 430px){
@@ -175,10 +177,10 @@
             }
     
     }
-    div .flex-center {
-
+    #links-footer{
         display: none;
     }
+
     div .flex-column {
 
         margin: auto;
@@ -205,6 +207,34 @@
         font-weight:$fontLight;
         text-align: center;
     }
+    .caja1{
+
+        
+        padding-left: 0;
+        margin: 20px auto; 
+        max-width: 50px;
+        min-width: 30px;
+    }
+
+    .caja2{
+
+        margin-top: 0px;
+        padding: 10px;
+        text-align: center;
+        max-width: 449px;
+        min-width: 150px;
+        height: auto;
+        p{
+           width: 100%;
+           font-weight: $fontLight;
+           font-size: $textXs;
+        }
+   }
+   .contenedor-motos{
+
+    display: none;
+}
+
     figure {
 
         width: 80%;

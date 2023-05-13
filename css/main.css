@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  --white: #fff;
+  --maincolor: #434b56;
+}
+
 .diplayflex, .flex-column, .flex-space-evenly, .flex-space-between, .flex-center {
   display: flex;
   align-items: center;
@@ -24,6 +30,41 @@
   color: #d4d4dc;
 }
 
+.bg-color1 {
+  background-color: red;
+}
+
+.bg-color2 {
+  background-color: blue;
+}
+
+button.navbar-toggler {
+  background-color: #ffffff;
+}
+button.navbar-toggler:hover {
+  box-shadow: 5px 5px 1px 0px #434b56;
+}
+
+nav div div a {
+  color: #434b56;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+nav div div a:hover {
+  color: #434b56;
+  background-size: 100% 2px;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  margin: auto;
+}
+
 .navtext {
   color: #434b56;
   font-weight: 400;
@@ -34,8 +75,22 @@
   width: 500px;
 }
 
+.w-300px {
+  width: 300px;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.textos_about_us {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.min-maxcontainer2 {
+  min-width: 300px;
+  max-width: 600px;
 }
 
 .position-relative {
@@ -80,16 +135,22 @@ figcaption {
 }
 
 main div img.logomain {
-  width: 100px;
+  width: 100%;
 }
 
-main div div figure {
-  width: 20%;
+main div div.section-latest-products {
+  flex-wrap: wrap;
+}
+main div div.section-latest-products figure {
+  width: 250px;
   border: solid 1px #c8c9ca;
   border-radius: 10px;
   box-shadow: 8px 4px 10px #e0e0e0;
 }
-main div div figure img {
+main div div.section-latest-products figure:hover {
+  transform: scale(102%);
+}
+main div div.section-latest-products figure img {
   width: 80%;
 }
 
@@ -100,12 +161,33 @@ main div div figure img {
 }
 
 .caja1 {
-  text-align: left;
+  padding-left: 20px;
   margin-top: 20%;
+  max-width: 100px;
+  min-width: 30px;
 }
 
 .caja2 {
+  margin-top: 20px;
+  padding: 20px;
   text-align: left;
+  max-width: 449px;
+  min-width: 150px;
+  height: auto;
+}
+.caja2 p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.contenedor-motos {
+  max-width: 449px;
+  min-width: 150px;
+}
+
+.img-motos {
+  width: 100%;
 }
 
 figure {
@@ -115,6 +197,9 @@ figure {
   box-shadow: 8px 4px 10px #e0e0e0;
   text-align: center;
   background-color: #ffffff;
+}
+figure:hover {
+  transform: scale(102%);
 }
 figure img {
   width: 75%;
@@ -238,7 +323,7 @@ figure img {
   margin: 0 auto;
 }
 
-main div div img {
+main div .product-imgs img {
   width: 100%;
   display: block;
 }
@@ -272,7 +357,6 @@ main div div img {
 
 .product-title {
   font-size: 3rem;
-  text-transform: capitalize;
   font-weight: 700;
   position: relative;
   color: #434b56;
@@ -388,6 +472,146 @@ main div div img {
     padding-top: 0;
   }
 }
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #434b56;
+}
+
+.secondary-title {
+  font-size: 2rem;
+  color: #434b56;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  border-radius: 0 10px 0 10px;
+  margin: 16px 0;
+  border: 0;
+  background: #d4d4dc;
+  padding: 20px 40px;
+  outline: none;
+  transition: 0.5s;
+}
+.contact-form-text:focus {
+  box-shadow: 5px 5px 1px 0px #434b56;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  border: 0;
+  background: #434b56;
+  color: white;
+  padding: 12px 50px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: rgb(141, 144, 148);
+}
+
+.icon {
+  width: 40px;
+  fill: #434b56;
+}
+
+@media screen and (max-width: 495px) {
+  .contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #434b56;
+  }
+  .secondary-title {
+    font-size: 1.3em;
+    color: #434b56;
+    text-align: center;
+  }
+  main div p.p-2 {
+    text-align: center;
+  }
+  #contact-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form-btn {
+    padding: 10px 35px;
+    margin: auto;
+  }
+  #contenedor-icons {
+    display: inline;
+  }
+}
+.reset {
+  overflow-x: hidden;
+}
+
+.imgdiv {
+  max-width: 800px;
+  min-width: 300px;
+}
+
+.error404 {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+.UH-OH {
+  font-weight: bold;
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+.btn.main-color {
+  border: 4px solid var(--maincolor);
+  color: var(--maincolor);
+}
+.btn.main-color:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--maincolor);
+  z-index: -1;
+  transition: 0.2s ease;
+}
+.btn.main-color:hover {
+  color: var(--white);
+  background: var(--maincolor);
+  transition: 0.2s ease;
+}
+.btn.main-color:hover:before {
+  width: 100%;
+}
+
 footer {
   background-color: #434b56;
   padding: 2% 3%;
@@ -559,7 +783,7 @@ footer p {
   footer p {
     color: white;
   }
-  div .flex-center {
+  #links-footer {
     display: none;
   }
   div .flex-column {
@@ -581,6 +805,28 @@ footer p {
     font-size: 0.875em;
     font-weight: 300;
     text-align: center;
+  }
+  .caja1 {
+    padding-left: 0;
+    margin: 20px auto;
+    max-width: 50px;
+    min-width: 30px;
+  }
+  .caja2 {
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    max-width: 449px;
+    min-width: 150px;
+    height: auto;
+  }
+  .caja2 p {
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.75em;
+  }
+  .contenedor-motos {
+    display: none;
   }
   figure {
     width: 80%;
